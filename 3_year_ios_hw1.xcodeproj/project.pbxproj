@@ -11,6 +11,10 @@
 		8C4922962B6FFCE300C72D83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4922952B6FFCE300C72D83 /* ContentView.swift */; };
 		8C4922982B6FFCFA00C72D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4922972B6FFCFA00C72D83 /* Assets.xcassets */; };
 		8C49229B2B6FFCFA00C72D83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C49229A2B6FFCFA00C72D83 /* Preview Assets.xcassets */; };
+		8C4922AD2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C4922AB2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodeld */; };
+		8C4922AF2B7013B200C72D83 /* TodoListItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4922AE2B7013B200C72D83 /* TodoListItem+Extention.swift */; };
+		8C8FCF0D2B701C1500BAC092 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8FCF0C2B701C1400BAC092 /* Persistence.swift */; };
+		8C8FCF102B701DA300BAC092 /* TodoListItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8FCF0F2B701DA300BAC092 /* TodoListItemService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		8C4922952B6FFCE300C72D83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C4922972B6FFCFA00C72D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C49229A2B6FFCFA00C72D83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C4922A82B70090500C72D83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8C4922AC2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 3_year_ios_hw1.xcdatamodel; sourceTree = "<group>"; };
+		8C4922AE2B7013B200C72D83 /* TodoListItem+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoListItem+Extention.swift"; sourceTree = "<group>"; };
+		8C8FCF0C2B701C1400BAC092 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8C8FCF0F2B701DA300BAC092 /* TodoListItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,9 @@
 		8C4922872B6FFCE200C72D83 = {
 			isa = PBXGroup;
 			children = (
+				8C4922A82B70090500C72D83 /* README.md */,
+				8C8FCF0C2B701C1400BAC092 /* Persistence.swift */,
+				8C4922AB2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodeld */,
 				8C4922922B6FFCE300C72D83 /* 3_year_ios_hw1 */,
 				8C4922912B6FFCE300C72D83 /* Products */,
 			);
@@ -51,10 +63,12 @@
 		8C4922922B6FFCE300C72D83 /* 3_year_ios_hw1 */ = {
 			isa = PBXGroup;
 			children = (
+				8C8FCF0E2B701D8D00BAC092 /* services */,
 				8C4922932B6FFCE300C72D83 /* __year_ios_hw1App.swift */,
 				8C4922952B6FFCE300C72D83 /* ContentView.swift */,
 				8C4922972B6FFCFA00C72D83 /* Assets.xcassets */,
 				8C4922992B6FFCFA00C72D83 /* Preview Content */,
+				8C4922A52B70021F00C72D83 /* Model */,
 			);
 			path = 3_year_ios_hw1;
 			sourceTree = "<group>";
@@ -65,6 +79,22 @@
 				8C49229A2B6FFCFA00C72D83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C4922A52B70021F00C72D83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C4922AE2B7013B200C72D83 /* TodoListItem+Extention.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C8FCF0E2B701D8D00BAC092 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8C8FCF0F2B701DA300BAC092 /* TodoListItemService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C4922962B6FFCE300C72D83 /* ContentView.swift in Sources */,
+				8C4922AF2B7013B200C72D83 /* TodoListItem+Extention.swift in Sources */,
+				8C8FCF102B701DA300BAC092 /* TodoListItemService.swift in Sources */,
 				8C4922942B6FFCE300C72D83 /* __year_ios_hw1App.swift in Sources */,
+				8C4922AD2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodeld in Sources */,
+				8C8FCF0D2B701C1500BAC092 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C4922AB2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C4922AC2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodel */,
+			);
+			currentVersion = 8C4922AC2B700B1600C72D83 /* 3_year_ios_hw1.xcdatamodel */;
+			path = 3_year_ios_hw1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8C4922882B6FFCE200C72D83 /* Project object */;
 }
